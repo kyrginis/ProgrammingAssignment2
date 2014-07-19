@@ -1,7 +1,7 @@
-## Function makeCacheMatrix
+## Function makeCacheMatrix(x)
 ## Returns a list containing 4 functions:
-## set : sets the value of the matrix
-## get : gets the value of the matrix
+## set : sets the value of the matrix x
+## get : gets the value of the matrix x
 ## setinv : sets the value of the inverse matrix
 ## getinv : gets the value of the inverse matrix
 makeCacheMatrix <- function(x = matrix()) {
@@ -18,8 +18,8 @@ makeCacheMatrix <- function(x = matrix()) {
              getinv = getinv)
 }
 
-## Function cacheSolve
-## Returns the inverse of the special matrix created
+## Function cacheSolve(x, ...)
+## Returns the inverse of the special matrix x created
 ## with makeCacheMatrix. If the inverse has already been
 ## calculated, it is retrieved from the cache, otherwise
 ## it is calculated and stored in the cache
