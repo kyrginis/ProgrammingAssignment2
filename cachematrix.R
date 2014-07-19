@@ -1,5 +1,5 @@
 ## Function makeCacheMatrix(x)
-## Returns a list containing 4 functions:
+## Returns a special "matrix" which is a list of 4 functions:
 ## set : sets the value of the matrix x
 ## get : gets the value of the matrix x
 ## setinv : sets the value of the inverse matrix
@@ -19,7 +19,7 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## Function cacheSolve(x, ...)
-## Returns the inverse of the special matrix x created
+## Returns the inverse of the special "matrix" x created
 ## with makeCacheMatrix. If the inverse has already been
 ## calculated, it is retrieved from the cache, otherwise
 ## it is calculated and stored in the cache
